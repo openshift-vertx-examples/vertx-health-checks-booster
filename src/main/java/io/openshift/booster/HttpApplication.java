@@ -43,7 +43,7 @@ public class HttpApplication extends AbstractVerticle {
 
   private void stopTheService(RoutingContext rc) {
     rc.response().end("Stopping HTTP server, Bye bye world !");
-    online = false;
+    online = true;
   }
 
   private void greeting(RoutingContext rc) {
